@@ -13,4 +13,6 @@ services:
     container_name: myblog_c
     ports:
       - '3000:3000'
+    # volumes 寫法，只有 window 才要這樣，如果是 linux 就照舊
     stdin_open: true
+    tty: true
