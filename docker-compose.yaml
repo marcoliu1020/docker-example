@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  api:
+  backend:
     build: ./api
     container_name: api_c
     ports:
@@ -8,7 +8,7 @@ services:
     volumes:
       - ./api:/app
       - /app/node_modules
-  myblog:
+  front:
     build: ./myblog
     container_name: myblog_c
     ports:
